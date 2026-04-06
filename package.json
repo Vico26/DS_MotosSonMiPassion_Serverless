@@ -1,0 +1,8 @@
+{
+  "name": "serverless-motos",
+  "version": "1.0.0",
+  "dependencies": {
+    "aws-sdk": "^2.1480.0",
+    "uuid": "^9.0.0"
+  }
+}
