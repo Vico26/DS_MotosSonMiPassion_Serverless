@@ -1,8 +1,10 @@
 const AWS = require("aws-sdk");
 
 const dynamo = new AWS.DynamoDB.DocumentClient({
-  region: "localhost",
-  endpoint: "http://localhost:8000"
+  region: "us-east-1",
+  endpoint: "http://localhost:8000",
+  accessKeyId: "fake",
+  secretAccessKey: "fake"
 });
 
 const TABLE = "Partes";

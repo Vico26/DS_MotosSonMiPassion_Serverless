@@ -6,7 +6,20 @@ provider:
   region: us-east-1
 
 plugins:
+  - serverless-dynamodb-local
   - serverless-offline
+
+custom:
+  dynamodb:
+    stages:
+      - dev
+    start:
+      port: 8000
+      inMemory: true
+      migrate: false
+      accessKeyId: fake
+      secretAccessKey: fake
+      region: us-east-1
 
 functions:
   createParte:
@@ -22,4 +35,18 @@ functions:
       - http:
           path: partes
           method: get
+
+resources:
+  Resources:
+    PartesTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: Partes
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        BillingMode: PAY_PER_REQUEST
           
