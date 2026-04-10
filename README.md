@@ -1,3 +1,8 @@
+# Las Motos son Mi passion
+## Integrantes
+Victoria Molina Martínez 
+Daniela Suárez Quirós
+## Diseño de Software
 class Parte {
   constructor(id, nombre, tipo, precio) {
     this.id = id;
