@@ -4,7 +4,7 @@ Victoria Molina Martínez
 Daniela Suárez Quirós
 ## Diseño de Software
 
-# 🏍️ DS MotosSonMiPassion — Correr Localmente
+# DS MotosSonMiPassion — Correr Localmente
 
 ## Requisitos previos
 
@@ -74,7 +74,7 @@ Necesitás **dos terminales** abiertas al mismo tiempo.
 nvm use 18
 serverless offline start
 ```
-El servidor queda corriendo en `http://localhost:3000` 🚀
+El servidor queda corriendo en `http://localhost:3000` 
 
 ### Terminal 2 — Crear la tabla en DynamoDB
 > Hacé esto **cada vez** que reiniciés el servidor (los datos son en memoria).
